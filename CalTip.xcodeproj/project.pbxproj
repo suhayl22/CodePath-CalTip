@@ -14,6 +14,7 @@
 		986C93861E52C151009BAEAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986C93841E52C151009BAEAF /* LaunchScreen.storyboard */; };
 		986C93911E52C152009BAEAF /* CalTipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C93901E52C152009BAEAF /* CalTipTests.swift */; };
 		986C939C1E52C152009BAEAF /* CalTipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986C939B1E52C152009BAEAF /* CalTipUITests.swift */; };
+		989F9BF61E6FF476000B3EDA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F9BF51E6FF476000B3EDA /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		986C93971E52C152009BAEAF /* CalTipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalTipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		986C939B1E52C152009BAEAF /* CalTipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalTipUITests.swift; sourceTree = "<group>"; };
 		986C939D1E52C152009BAEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		989F9BF51E6FF476000B3EDA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		986C936F1E52C151009BAEAF = {
 			isa = PBXGroup;
 			children = (
+				989F9BF51E6FF476000B3EDA /* SettingsViewController.swift */,
 				986C937A1E52C151009BAEAF /* CalTip */,
 				986C938F1E52C152009BAEAF /* CalTipTests */,
 				986C939A1E52C152009BAEAF /* CalTipUITests */,
@@ -261,6 +264,7 @@
 			files = (
 				986C937E1E52C151009BAEAF /* ViewController.swift in Sources */,
 				986C937C1E52C151009BAEAF /* AppDelegate.swift in Sources */,
+				989F9BF61E6FF476000B3EDA /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +507,7 @@
 				986C93A21E52C152009BAEAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		986C93A31E52C152009BAEAF /* Build configuration list for PBXNativeTarget "CalTipTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +516,7 @@
 				986C93A51E52C152009BAEAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		986C93A61E52C152009BAEAF /* Build configuration list for PBXNativeTarget "CalTipUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +525,7 @@
 				986C93A81E52C152009BAEAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
