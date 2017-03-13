@@ -17,6 +17,7 @@ class SettingsViewController: UIViewController{
 
         // Do any additional setup after loading the view.
         
+        //Store default values
         let defaultValues = UserDefaults.standard
         let segmentChecked = defaultValues.integer(forKey: "SegmentHighlighted")
         self.settingsSegmentedControl.selectedSegmentIndex = segmentChecked
@@ -33,7 +34,7 @@ class SettingsViewController: UIViewController{
     
 
     @IBAction func selectTip(_ sender: AnyObject) {
-        
+        //To mark the UI Segmented as selected
         let defaults = UserDefaults.standard
         defaults.set(settingsSegmentedControl.selectedSegmentIndex, forKey: "SegmentHighlighted")
         defaults.synchronize()

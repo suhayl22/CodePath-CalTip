@@ -36,6 +36,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        //Read the stored valuess
         let defaults = UserDefaults.standard
         let segmentHighlightedd = defaults.integer(forKey: "SegmentHighlighted")
         self.tipControl.selectedSegmentIndex = segmentHighlightedd
