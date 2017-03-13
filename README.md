@@ -13,4 +13,4 @@ Completed Tasks:
 Notes:
 
 This app only works best on "iPhone 7" potrait mode.
-UI not optimized for other screens.
+UI not optimized for other screens..
