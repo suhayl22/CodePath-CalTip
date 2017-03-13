@@ -15,6 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var etBillAmount: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
     
+    @IBOutlet weak var threePersonsI: UILabel!
+    @IBOutlet weak var twoPersonsI: UILabel!
+    @IBOutlet weak var onePerson: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,7 +32,16 @@ class ViewController: UIViewController {
     @IBAction func onTap(_ sender: AnyObject) {
         view.endEditing(true)
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let defaults = UserDefaults.standard
+        let segmentHighlightedd = defaults.integer(forKey: "SegmentHighlighted")
+        self.tipControl.selectedSegmentIndex = segmentHighlightedd
+        calculateTip(self)
+    }
+    
     @IBAction func calculateTip(_ sender: AnyObject) {
         let tipCentages = [0.17, 0.20, 0.22, 0.25]
         let billAmount = Double(etBillAmount.text!) ?? 0
@@ -36,7 +49,10 @@ class ViewController: UIViewController {
         let totalAmount = billAmount + tipAmount
         tipLabel.text = String(format: "$%.2f", tipAmount)
         totalLabel.text = String(format: "$%.2f", totalAmount)
-        
+        onePerson.text = String(format: "$%.2f", totalAmount)
+        twoPersonsI.text = String(format: "$%.2f", totalAmount/2)
+        threePersonsI.text = String(format: "$%.2f", totalAmount/3)
     }
+ 
 }
 

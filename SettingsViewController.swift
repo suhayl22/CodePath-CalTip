@@ -8,15 +8,19 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class SettingsViewController: UIViewController{
 
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var pickerView: UIPickerView!
+    @IBOutlet weak var settingsSegmentedControl: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let defaultValues = UserDefaults.standard
+        let segmentChecked = defaultValues.integer(forKey: "SegmentHighlighted")
+        self.settingsSegmentedControl.selectedSegmentIndex = segmentChecked
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,33 +28,15 @@ class SettingsViewController: UIViewController, UIPickerViewDataSource, UIPicker
         // Dispose of any resources that can be recreated.
     }
     
+    let tipCentages = [0.17, 0.20, 0.22, 0.25]
+    
+    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func selectTip(_ sender: AnyObject) {
+        
+        let defaults = UserDefaults.standard
+        defaults.set(settingsSegmentedControl.selectedSegmentIndex, forKey: "SegmentHighlighted")
+        defaults.synchronize()
+    
     }
-    */
-    
-    let currency = ["$ US Dollar", "@ Pound", "& Rupees"]
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return currency[row]
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return currency.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        label.text = currency[row]
-    }
-    
 }

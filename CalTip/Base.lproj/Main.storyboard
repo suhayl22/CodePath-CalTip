@@ -91,9 +91,54 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znt-lc-AHs">
+                                <rect key="frame" x="16" y="474" width="102" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9L2-Z5-qII">
+                                <rect key="frame" x="16" y="541" width="102" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="II" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTF-DH-yus">
+                                <rect key="frame" x="140" y="473" width="95" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfm-lz-mgK">
+                                <rect key="frame" x="146" y="542" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFv-OY-zr2">
+                                <rect key="frame" x="267" y="542" width="92" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="III" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhz-kM-bdo">
+                                <rect key="frame" x="273" y="473" width="86" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.61348408460617065" green="0.920337975025177" blue="0.81835669279098511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <color key="backgroundColor" red="0.61348408460617065" green="0.920337975025177" blue="0.81835669279098511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="rqb-bE-Szc" appends="YES" id="qIQ-EU-RBx"/>
                         </connections>
@@ -107,9 +152,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="etBillAmount" destination="O8C-qJ-sZR" id="6dn-dV-7y5"/>
+                        <outlet property="onePerson" destination="9L2-Z5-qII" id="GpI-Ew-lY3"/>
+                        <outlet property="threePersonsI" destination="bFv-OY-zr2" id="yS6-db-2Te"/>
                         <outlet property="tipControl" destination="Ot9-KN-WTh" id="ncE-dE-jR2"/>
                         <outlet property="tipLabel" destination="jY0-HE-wnT" id="S5J-1b-8BE"/>
                         <outlet property="totalLabel" destination="9vk-vl-dJ7" id="YxC-fQ-QSg"/>
+                        <outlet property="twoPersonsI" destination="Tfm-lz-mgK" id="oED-sU-cza"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -144,11 +192,15 @@
                                 </segments>
                                 <connections>
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="Zzi-ay-pNr"/>
+                                    <action selector="selectTip:" destination="ZZa-yw-wgO" eventType="valueChanged" id="Ggh-KQ-NPp"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.61348408460617065" green="0.920337975025177" blue="0.81835669279098511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="settingsSegmentedControl" destination="Ym7-bs-dj6" id="Apd-lW-dPN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1jG-Ey-luC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,4 +225,5 @@
             <point key="canvasLocation" x="436.875" y="786.97183098591552"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.13632786273956299" green="0.02208838053047657" blue="0.98153287172317505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
