@@ -1,5 +1,6 @@
 # CodePath-CalTip
 This is a Tip Calculator application for iOS submitted as the pre-assignment requirement for Codepath.
+
 ![Walkthrough](GIFs/CalTip.gif)
 
 Time spent: 6 hours
